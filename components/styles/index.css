@@ -1,0 +1,72 @@
+:root {
+  --paynes-gray: #525b76;
+  --white: #fff;
+}
+
+body {
+  background-color: var(--paynes-gray);
+  width: 100%;
+  margin: 0 auto;
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4vh;
+  padding: 10px;
+}
+
+#nav-link li {
+  display: inline;
+  padding: 5px;
+}
+
+#nav-link li a {
+  color: var(--white);
+}
+
+#hero {
+  background-image: url("../images/developer.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+#hero h2 {
+  background-color: var(--paynes-gray);
+  padding: 10px;
+  /*border-radius: 5px;*/
+}
+
+#aboutMe,
+#previousWork {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+aside {
+  display: flex;
+}
+
+#aboutMe p {
+  padding-left: 15px;
+}
+
+#inner {
+  border-left: 6px solid green;
+  height: 30px;
+  margin: 0px 0px 10px 10px;
+}
+
+p
