@@ -5,7 +5,7 @@
 
 body {
   background-color: var(--paynes-gray);
-  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto;
   color: var(--white);
   font-family: "Roboto", sans-serif;
@@ -28,6 +28,7 @@ header {
 
 #nav-link li a {
   color: var(--white);
+  text-decoration: none;
 }
 
 #hero {
@@ -65,8 +66,69 @@ aside {
 
 #inner {
   border-left: 6px solid green;
-  height: 30px;
   margin: 0px 0px 10px 10px;
 }
 
-p
+#workContent {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+#workContentInner {
+  border: 5px solid darkorchid;
+  margin: 10px;
+}
+
+#workContentInner img {
+  width: 100%;
+  height: auto;
+}
+
+#workContent div:nth-child(n) {
+  display: flex;
+  justify-content: center;
+}
+
+#workContent div:nth-child(1) {
+  flex: 2 1 100%;
+}
+#workContent div:nth-child(n + 2) {
+  flex: 1 1 10%;
+}
+
+/*Tablet screen size responsive*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  #aboutMe,
+  #previousWork {
+    flex-direction: column;
+  }
+  #aboutMe p {
+    padding-left: 0px;
+  }
+  #inner {
+    border-left: 0px;
+    margin: 0px;
+  }
+  #workContent {
+    flex-direction: column;
+  }
+}
+
+/*Mobile screen size responsive*/
+@media screen and (max-width: 767px) {
+  #aboutMe,
+  #previousWork {
+    flex-direction: column;
+  }
+  #aboutMe p {
+    padding-left: 0px;
+  }
+  #inner {
+    border-left: 0px;
+    margin: 0px;
+  }
+  #workContent {
+    flex-direction: column;
+  }
+}
