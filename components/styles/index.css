@@ -1,6 +1,6 @@
 :root {
   --paynesGray: #525b76;
-  --white: #fff;
+  --white: #ffffff;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: var(--white);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
@@ -29,6 +30,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
+  color: var(--white);
 }
 
 section:not(#hero) {
@@ -71,8 +73,8 @@ section:not(#hero) {
   flex-wrap: wrap;
 }
 
-.summary span {
-  margin: 0;
+.summary > div {
+  padding-right: 15%;
 }
 
 #previousWork {
@@ -80,6 +82,7 @@ section:not(#hero) {
 }
 
 #workContent {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-left: 10px;
@@ -87,21 +90,24 @@ section:not(#hero) {
 
 #workContent div {
   margin: 10px;
-}
-
-#workContent > div:first-child {
-  border: 6px solid red;
-  flex: 1 0 auto;
-}
-
-#workContent > div:not(:first-child) {
+  flex: 1 0 100px;
+  flex-wrap: wrap;
   border: 6px solid darkorchid;
 }
 
-.showCase #completedContent {
-  height: 30vh;
-  width: 100%;
-  background: center / cover;
+#workContent div:first-child {
+  position: relative;
+  flex: 2 0 200px;
+  border: 6px solid red;
+  background-image: url(../images/seo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  width: 150vh;
+}
+
+#workContent > div:not(:first-child) {
+  flex: 1 0 150px;
 }
 
 @media (max-width: 1024px) {
