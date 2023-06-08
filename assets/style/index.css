@@ -126,6 +126,11 @@ Flex-wrap is used to wrap the divs if they overflow the screen. */
   width: 100%;
 }
 
+#summary {
+  display: flex;
+  flex: 1 1 200px;
+}
+
 section article {
   width: 100%;
 }
@@ -144,6 +149,7 @@ section article {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-around;
+  flex: 1 1 200px;
 }
 
 .workPortfolio section div {
@@ -238,6 +244,7 @@ span[data-tooltip]:hover::after {
   justify-content: space-between;
   align-items: flex-end;
   justify-content: space-around;
+  flex: 1 -1 0;
 }
 
 #contact-links ul {
@@ -250,7 +257,8 @@ span[data-tooltip]:hover::after {
   color: var(--white);
   text-decoration: none;
   height: 100%;
-  margin: 0 0 10px 200px;
+  margin: 0 0 10px 20px;
+  padding-left: 50px;
 }
 
 #contact-links ul li em {
@@ -322,12 +330,12 @@ It also sets the width and height of the elements.
 
   .workPortfolio .completedWorks {
     width: 400px;
-    height: 200px;
+    flex: 2 1 200px;
   }
 
   .workPortfolio #comingSoon {
     flex-direction: column;
-    flex: 1 0 200px;
+    flex: 2 0 200px;
   }
 }
 
@@ -391,14 +399,12 @@ It will make the website look good on mobile devices. */
     width: 50px;
   }
 
-  .workPortfolio #comingSoon .nextProjects {
-    height: 100px;
-    width: 100px;
+  .workPortfolio #comingSoon {
+    flex-direction: column;
   }
 
-  .workPortfolio #comingSoon {
-    flex-direction: row;
-    flex: 1 0 200px;
+  .workPortfolio #comingSoon .nextProjects {
+    flex: 0 2 100px;
   }
 
   .workPortfolio {
