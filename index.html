@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="components/styles/reset.css" />
-    <link rel="stylesheet" href="components/styles/index.css" />
+    <link rel="stylesheet" href="./assets/style/normalize.css" />
+    <link rel="stylesheet" href="./assets/style/index.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
+      <!--This code is responsible for: - Creating a header element - Adding a logo to the header -
+      Creating a navigation bar with 4 links - Adding the navigation bar to the header - Adding the
+      header to the page.-->
       <header>
-        <span>Portfolio</span>
-        <nav id="nav-link">
+        <span id="logo">Portfolio</span>
+        <nav id="nav-links">
           <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#aboutMe">About Me</a></li>
@@ -21,47 +24,126 @@
           </ul>
         </nav>
       </header>
+
+      <!-- The section below is the hero section. 
+      It is the first section that the user sees when they visit the website. 
+      It contains a profile picture of the user and a brief description of the user. -->
       <section id="hero">
-        <h2>I'm a web developer</h2>
+        <div class="avatar">
+          <img class="avatar_image" src="./assets/images/Avatar.png" alt="profile_Avatar" />
+        </div>
+        <div class="homeHeading">
+          <h2>John Doe: Software Developer</h2>
+        </div>
       </section>
-      <section id="aboutMe">
-        <aside>
-          <h3>About Me</h3>
-          <div id="inner"></div>
+
+      <!--This code creates a section element with the id "aboutMe" and the class "selfIntroduction". 
+  It then creates an aside element with the class "section-header" and a h2 element. 
+  The h2 element has the text "About Me" and "About Me" on separate lines. 
+  It then creates an article element with the id "summary" and a paragraph element. -->
+
+      <section id="aboutMe" class="selfIntroduction">
+        <aside class="section-header">
+          <h2>
+            About<br />
+            Me
+          </h2>
         </aside>
-        <article class="summary">
-          <div>
-            <span>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum iusto blanditiis
-              architecto unde maxime quod repudiandae aperiam, ducimus, voluptatum, quasi illo
-              quisquam dolor doloribus rerum nam eligendi debitis quaerat asperiores? Vel excepturi
-              architecto quibusdam placeat, fugiat sapiente officiis eos corrupti quia nulla ut
-              exercitationem, atque corporis harum possimus, quas quaerat eaque libero nemo! Quam
-              consectetur beatae commodi soluta. Animi, itaque? Placeat sapiente quia sed eos, culpa
-              excepturi cupiditate dolorum, rem nam accusamus illo laboriosam possimus assumenda et
-              fugit est minima itaque! Ex neque tempora nobis placeat. Iure, quia laborum? Placeat.
-            </span>
-          </div>
+        <article id="summary">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum quas, repellendus
+            accusamus ut, eum sint mollitia qui libero laudantium quam suscipit cumque. Dicta vitae
+            quidem quisquam consectetur, eligendi in cumque! Dolores minus rerum ab eveniet suscipit
+            voluptas quasi debitis eum, harum nobis eos fugit ratione mollitia exercitationem
+            molestiae dolore optio consectetur, obcaecati eligendi delectus reprehenderit nesciunt
+            voluptate vel assumenda. Asperiores? Dolores sit commodi, possimus suscipit est eveniet
+            fugiat quisquam quod illum, deserunt voluptates molestias earum eos. Delectus animi
+            expedita, molestias velit, fugit qui debitis laborum commodi at aperiam incidunt!
+            Quisquam. Dolorem consequatur facilis omnis reiciendis numquam accusantium sint itaque
+            perferendis id, temporibus voluptate perspiciatis officia laboriosam iusto laborum
+            labore magnam repellendus accusamus qui assumenda. Beatae quaerat culpa asperiores magni
+            commodi. Aut fuga adipisci est veritatis eos soluta iste quasi inventore, repellendus
+            voluptates nulla error veniam earum placeat hic? Laudantium amet maxime temporibus
+            facilis voluptatibus earum dicta omnis dolores hic odit.
+            <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magnam maiores officiis
+            cupiditate numquam quo aliquam nesciunt? Cumque nihil rerum delectus odio, quod veniam
+            magnam quaerat id corporis, earum porro. Temporibus molestiae molestias necessitatibus
+            eligendi, dolorum nostrum, quas nisi eum quod accusamus facilis, quos totam beatae
+            reprehenderit doloribus ab officia possimus commodi fugit impedit deserunt excepturi
+            asperiores blanditiis exercitationem. Vero. Aliquid suscipit cum earum nihil ad rem
+            voluptatibus, possimus vel fugit ratione modi repellat ipsum cumque sed sequi magnam
+            veritatis minus. Beatae nostrum minus ab! Nobis similique iste animi debitis. Explicabo,
+            nam blanditiis iusto, vel sit suscipit fuga labore, autem harum unde ea esse soluta. Eos
+            culpa voluptates eligendi adipisci iure quidem vel porro incidunt ratione, corrupti
+            inventore corporis hic. Nam qui aut illum maxime quas enim recusandae ratione deleniti
+            necessitatibus? Qui commodi, possimus enim, deserunt ut corporis reiciendis consequatur
+            perspiciatis sint, architecto quidem corrupti alias? Corporis nemo asperiores nisi?
+          </p>
         </article>
       </section>
-      <section class="workSummary" id="previousWork">
-        <aside>
-          <h3>Work</h3>
-          <div id="inner"></div>
+
+      <!--The code above is used to create a section of the webpage that contains my previous projects. 
+      The section is titled "previousWork" and has a class "sampleSection". 
+      The section has an aside element that contains a header with a h2 tag with the title "Work Samples". 
+      The section also contains an article with an id "worksLayout" and a class "workPortfolio". 
+      The article contains three sections. The first section has an id "sampleWork" 
+      and contains a div with a class "completedWorks" and a div with an id "webAmplify". 
+      The second section has an id "comingSoon" and contains two divs with a class "nextProjects". 
+      The third section has an id "comingSoon" and contains two divs with a class "nextProjects". 
+      The first div in the first section contains two span elements with class "tooltip" and data-tooltip "Click Me" 
+      and a link that leads to my web amplify project. The second span element contains a link that leads to my web amplify project repository.-->
+
+      <section id="previousWork" class="sampleSection">
+        <aside class="section-header">
+          <h2>
+            Work <br />
+            Samples
+          </h2>
         </aside>
-        <article id="workContent">
-          <div class="showCase" id="workContentInner"></div>
-          <div class="workContentInner">are</div>
-          <div class="workContentInner">test</div>
-          <div class="workContentInner">divs</div>
-          <div class="workContentInner">yay</div>
+        <article class="workPortfolio" id="worksLayout">
+          <section id="sampleWork">
+            <div class="completedWorks">
+              <div id="webAmplify">
+                <span class="tooltip" data-tooltip="Click Me"
+                  ><a href="https://mwangir.github.io/module1-web_amplify/">Web Amplify</a></span
+                >
+                <span class="tooltip" data-tooltip="Click Me"
+                  ><a href="https://github.com/MwangiR/module1-web_amplify.git">Repo</a></span
+                >
+              </div>
+            </div>
+          </section>
+          <section id="comingSoon">
+            <div class="nextProjects"></div>
+            <div class="nextProjects"></div>
+          </section>
+          <section id="comingSoon">
+            <div class="nextProjects"></div>
+            <div class="nextProjects"></div>
+          </section>
         </article>
       </section>
-      <section>
-        <aside></aside>
-        <article></article>
+
+      <!--The contact details are links to the user's phone number, email address, and social media pages.-->
+      <section id="contactMe">
+        <aside class="section-header" id="contactHeading">
+          <h2>
+            Contact<br />
+            Details
+          </h2>
+        </aside>
+        <article id="contactList">
+          <nav id="contact-links">
+            <ul>
+              <li><em>Number: </em><br />123456789</li>
+              <li><em>Email: </em><br />info@example.com</li>
+              <li><em>Socials: </em><br />John Doe LinkedIN</li>
+            </ul>
+          </nav>
+        </article>
       </section>
     </main>
+    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit.</footer>
   </body>
-  <footer></footer>
 </html>
