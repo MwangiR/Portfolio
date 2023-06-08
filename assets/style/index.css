@@ -411,9 +411,9 @@ It will make the website look good on mobile devices. */
     align-content: center;
     flex-direction: row;
   }
-  #contact-links ul li {
-    display: inline;
+  #contact-links ul {
+    display: flex;
+    flex-direction: column;
     margin: 1rem;
-    font-size: large;
   }
 }
