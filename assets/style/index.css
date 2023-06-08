@@ -90,6 +90,7 @@ header span {
   font-size: 0.8rem;
   padding: 1%;
   background-color: var(--paynesGray);
+  color: var(--mintgreen);
 }
 
 /* This code is used to style the previousWork and contactMe sections.
@@ -149,7 +150,7 @@ section article {
   flex-wrap: wrap;
   flex-direction: column;
   align-content: space-around;
-  flex: 1 1 200px;
+  flex: 1 1 auto;
 }
 
 .workPortfolio section div {
@@ -177,6 +178,7 @@ section article {
   filter: blur(2px);
   */
   display: flex;
+  flex: 2 1 auto;
 }
 
 .completedWorks #webAmplify {
@@ -244,7 +246,7 @@ span[data-tooltip]:hover::after {
   justify-content: space-between;
   align-items: flex-end;
   justify-content: space-around;
-  flex: 1 -1 0;
+  flex: 1 0 auto;
 }
 
 #contact-links ul {
@@ -302,11 +304,12 @@ It also sets the width and height of the elements.
   .workPortfolio .completedWorks {
     width: 400px;
     height: 200px;
+    flex: 2 0 auto;
   }
 
   .workPortfolio #comingSoon {
     flex-direction: column;
-    flex: 1 0 200px;
+    flex: 1 0 auto;
   }
 }
 
@@ -330,12 +333,12 @@ It also sets the width and height of the elements.
 
   .workPortfolio .completedWorks {
     width: 400px;
-    flex: 2 1 200px;
+    flex: 2 1 auto;
   }
 
   .workPortfolio #comingSoon {
     flex-direction: column;
-    flex: 2 0 200px;
+    flex: 1 0 Auto;
   }
 }
 
@@ -353,7 +356,7 @@ It will make the website look good on mobile devices. */
   }
 
   #nav-links ul li {
-    display: inline;
+    display: block;
   }
   #nav-links ul li a {
     padding: 0.5rem;
@@ -397,6 +400,7 @@ It will make the website look good on mobile devices. */
   .completedWorks {
     height: 100px;
     width: 50px;
+    flex: 1 2 auto;
   }
 
   .workPortfolio #comingSoon {
@@ -404,7 +408,7 @@ It will make the website look good on mobile devices. */
   }
 
   .workPortfolio #comingSoon .nextProjects {
-    flex: 0 2 100px;
+    flex: 0 2 auto;
   }
 
   .workPortfolio {
