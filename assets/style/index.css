@@ -167,7 +167,7 @@ section article {
 }
 
 .completedWorks {
-  background-image: url(../images/seo.jpg);
+  background-image: url(../images/gigFinder.jpg);
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -181,19 +181,40 @@ section article {
   flex: 2 1 auto;
 }
 
-.completedWorks #webAmplify {
+.completedWorks #gigFinder {
   border: 5px solid var(--poppy);
   background-color: var(--richBlack);
 }
 
-#webAmplify {
+#gigFinder {
   width: 100px;
   margin: 0;
 }
 
-#webAmplify span a {
+#gigFinder span a {
   color: var(--white);
   text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.webAmplify {
+  color: #f1f1f1;
+  background-image: url(../images/seo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+}
+
+#amplifyStyle {
+  display: flex;
+  width: 100px;
+  background-color: var(--richBlack);
+  margin: 0;
+}
+
+.webAmplify a {
+  color: #f1f1f1;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
