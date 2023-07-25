@@ -1,14 +1,14 @@
-# module2_Portfolio
+# Portfolio
 
 ## Link
 
-[Portfolio Link](https://mwangir.github.io/module2_Portfolio/ "Github Pages")
+[Portfolio Link](https://mwangir.github.io/Portfolio/)
 
 ## Screenshot
 
-[Screenshot](./assets/images/screenshot_index.html.png)
+![Screenshot](./assets/images/screenshot_index.html.png)
 
-# Portfolio Website
+## Portfolio Website
 
 This project is a simple portfolio website consisting of an HTML file and a CSS file. The website showcases a developer's profile, previous work, and contact details. The purpose of the website is to provide an online presence for the developer and allow visitors to learn more about their skills and experience.
 
