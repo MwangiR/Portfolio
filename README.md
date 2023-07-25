@@ -2,7 +2,7 @@
 
 ## Link
 
-[Github Pages](https://mwangir.github.io/module2_Portfolio/ "Github Pages")
+[Portfolio Link](https://mwangir.github.io/module2_Portfolio/ "Github Pages")
 
 ## Screenshot
 
