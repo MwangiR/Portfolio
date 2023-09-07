@@ -206,6 +206,16 @@ section article {
   width: 400px;
 }
 
+.viewPoint {
+  color: #f1f1f1;
+  background-image: url(../images/movie\ review.png);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+}
+
+#entertainmentReview,
 #amplifyStyle {
   display: flex;
   width: 100px;
@@ -213,6 +223,7 @@ section article {
   margin: 0;
 }
 
+.viewPoint a,
 .webAmplify a {
   color: #f1f1f1;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
